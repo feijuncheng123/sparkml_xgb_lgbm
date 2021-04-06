@@ -82,7 +82,7 @@ object xgbmodel {
 
     val xgbmodel=xgBoostModelWithDF.fit(trainingData)
 
-    xgbmodel.write.overwrite().save("hdfs:///user/zx_linhw/zx_fjc_model/xgbModel")
+    xgbmodel.write.overwrite().save("hdfs:///user/fjc_model/xgbModel")
 
     val predictions = xgbmodel.transform(testdt)
 
